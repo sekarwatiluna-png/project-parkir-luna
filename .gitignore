@@ -1,0 +1,47 @@
+
+# Environment dan rahasia
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Laravel
+backend/vendor/
+backend/storage/*.key
+backend/bootstrap/cache/*.php
+backend/storage/logs/*.log
+
+# Nuxt
+frontend/node_modules/
+frontend/.nuxt/
+frontend/.output/
+frontend/dist/
+
+# System
+.DS_Store
+Thumbs.db
+# Database lokal
+**/database/*.sqlite
+**/database/*.sqlite3
+**/database/*.db
+
+# Backup database
+*.sql
+*.sql.gz
+# Semua folder dependency
+**/vendor/
+**/node_modules/
+
+# File hasil build
+**/.nuxt/
+**/.output/
+**/dist/
+
+# Cache dan file lokal Laravel
+**/bootstrap/cache/*.php
+**/storage/*.key
+**/storage/logs/*.log
+
+# Database lokal
+**/database/*.sqlite*
+**/database/*.db
